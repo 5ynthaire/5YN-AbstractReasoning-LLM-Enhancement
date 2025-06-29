@@ -113,4 +113,5 @@ This prompt is released under the [Creative Commons Attribution 4.0 Internationa
 ## Glossary
 
 - **AI Synergy Threshold**: The point where human-AI collaboration transcends skill limits, as ARP leverages user inputs for creative insight generation.
-- **Prompt Architecting**: Designing complex, adaptive prompt systems. This prompt meets the criteria for [Prompt Architecting](https://github.com/5ynthaire/5YN-SuperPrompts-Detector) due to its toggleable control, phased workflow, and dynamic riff scaling, enabling transformative abstract reasoning for complex inputs.
+- **Prompt Architecting**: Designing complex, adaptive prompt systems. This prompt meets the criteria for [Prompt Architecting](https://github.com/5ynthaire/5YN-SuperPrompts-Detector) due to its toggleable control, phased workflow, and dynamic riff scaling, enabling transformative abstract reasoning for complex inputs
+- **Canvas-Lattice Engine**: A two-layer framework enhancing LLM abstract reasoning, inspiring ARP’s prompt-level design for creative, omnidirectional insight generation. See [Canvas-Lattice Engine](https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea).
