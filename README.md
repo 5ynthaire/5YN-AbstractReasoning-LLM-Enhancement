@@ -100,7 +100,7 @@ Purpose: Ends the cycle entirely, resumes standard reasoning.
 
 ## Contributing
 
-Fork this repo on GitHub, make changes, and submit a pull request. Share ARP results (e.g., resolved paradoxes) on X by tagging [@5ynthaire]. (CC BY 4.0)
+Fork this repo on GitHub, make changes, and submit a pull request. Share ARP results (e.g., resolved paradoxes) on X by tagging [@5ynthaire](https://x.com/5ynthaire). (CC BY 4.0)
 
 ## Future Development
 
