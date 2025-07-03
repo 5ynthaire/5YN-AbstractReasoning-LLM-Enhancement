@@ -1,10 +1,8 @@
 # Abstract Reasoning Prompt
 
-## Overview
+## Summary
 
-Large language models (LLMs) often struggle to think creatively about paradoxes, edge cases, or open-ended questions, relying on patterns rather than deep reasoning. The Abstract Reasoning Prompt (ARP) solves this by empowering users to unlock clear, creative insights with any LLM. Simply input a tricky question—like “Can omnipotent beings lose control?”—and ARP generates diverse perspectives, then delivers a sharp, meaningful answer.
-
-ARP is a practical step toward richer AI reasoning, a prompt-level implementation of the [Canvas-Lattice Engine](https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea), which uses abstract reasoning principles to expand LLM output.
+The Abstract Reasoning Prompt (ARP) empowers LLMs to resolve paradoxes and edge cases, delivering sharp, omnidirectional insights via a toggleable workflow. Compatible with modern LLMs, ARP implements the [Canvas-Lattice Engine](https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea) as a user-friendly prompt. Free under CC BY 4.0. Test runs at [demo page](https://5ynthaire.github.io/5YN-AbstractReasoning-LLM-Enhancement).
 
 ## About
 
@@ -15,24 +13,21 @@ ARP is a practical step toward richer AI reasoning, a prompt-level implementatio
 
 ## Mechanism
 
-**Listening**: The Abstract Reasoning Prompt (ARP) listens for complex inputs requiring abstract synthesis to respond, such as paradoxes, edge cases, or open-ended questions.
+ARP detects paradoxes, edge cases, or open-ended questions, expands them in a riffing phase using abstract reasoning principles (e.g., Invert, Analogize, Falsify, etc.), and culls non-meaningful combinations in a curation phase.
 
-**Riffing**: Once triggered, the LLM generates 3–7 insight vectors (Wild Sparks) based on input complexity, using abstract reasoning principles (e.g., inversion, analogy, falsification, synthesis) to produce diverse angles (metaphysical, cognitive, practical).
-
-**Curation**: The LLM curates these vectors, selecting the most coherent insight that sharpens meaning and aligns with the input’s essence, explaining the reasoning.
-
-In short, the riffing phase expands the input combinatorially with abstract reasoning principles, the curation phase culls the combinations that didn't yield meaningful insight. This is a prompt-level implementation of the proposed [Canvas-Lattice Engine](https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea), and serves as proof of concept and stop-gap solution for end users until AI companies integrate the idea to their platforms.
+See [Canvas-Lattice Engine](https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea) for details.
 
 ## Usage
-
-Copy the prompt text below and paste it into a compatible LLM’s input interface. Include “Activate ARP” followed by a paradox, edge case, or open-ended question. ARP will generate and curate insight vectors, returning a tightened response. Use “Deactivate ARP” to revert to standard LLM mode. No cloning is required.
+Copy the prompt below, paste it into a compatible LLM, and append “Activate ARP” with a paradox, problem, or edge case. View trial runs at [demo page](https://5ynthaire.github.io/5YN-AbstractReasoning-LLM-Enhancement).
 
 ## Supported LLMs
 
-Developed on Grok 3 (May 2025), compatible with equivalent-capability LLMs:
-- Grok 3
-- ChatGPT
-- Llama
+Developed on Grok 3 (April 2025), compatible with:
+- Grok 3 (xAI)
+- Claude 3.5 series (Anthropic)
+- Mistral models (Mistral AI)
+- GPT-4o series (OpenAI)
+- Llama series (Meta AI)
 
 Future LLMs should support the prompt, absent industry leadership in standardizing cognition levels.
 
@@ -57,7 +52,7 @@ Behavior: ARP runs in the background, listening for inputs.
 Input: A paradox, edge case, or open-ended question (e.g., “Even omnipotent beings can’t control meaning if order’s off,” “What if syntax isn’t law?” or “What’s your take on this?”).
 
 ### Knot Assessment Phase (ARP On)  
-**Action**: On trigger, assesses input complexity using default the LLM logic—counts knots: variables (distinct elements), constraints (limits), contradictions (tensions). No riffing, delivers one value.  
+**Action**: On trigger, assesses input complexity using default LLM logic—counts knots: variables (distinct elements), constraints (limits), contradictions (tensions). No riffing, delivers one value.  
 **Scale**: Sets riff count: 1-3 knots = 3 riffs (simple), 4-6 knots = 5 riffs (medium), 7+ knots = 7 riffs (dense).  
 **Output**: A single knot count to determine the number of Wild Sparks (e.g., 5 knots = 5 riffs).
 
@@ -80,13 +75,13 @@ Toggle: User deactivates ARP (e.g., “Turn off ARP”)—stops all ARP function
 Purpose: Ends the cycle entirely, resumes standard reasoning.
 ```
 
+## Novelty
+
+As of June 28, 2025, no prompt matches ARP’s toggleable, phased design for abstract reasoning (searched: AI, cognitive science). It uniquely implements the [Canvas-Lattice Engine](https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea). CC BY 4.0.
+
 ## Contributing
 
-Fork this repo on GitHub, make changes, and submit a pull request. Share ARP results (e.g., resolved paradoxes) on X by tagging [@5ynthaire]. (CC BY 4.0)
-
-## Future Development
-
-- **Cognition Standardization**: ARP’s performance varies across LLMs due to inconsistent cognition levels, requiring standardized metrics for reliable abstract reasoning.
+Fork this repo, make changes, and submit a pull request. Share ARP results on X by tagging [@5ynthaire]. (CC BY 4.0)
 
 ## License
 
@@ -96,4 +91,3 @@ This prompt is released under the [Creative Commons Attribution 4.0 Internationa
 
 - **Canvas-Lattice Engine**: A two-layer framework enhancing LLM abstract reasoning, inspiring ARP’s prompt-level design for creative, omnidirectional insight generation. See [Canvas-Lattice Engine](https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea).
 - **Prompt Architecting**: Designing complex, adaptive prompt systems. This prompt meets the criteria for [Prompt Architecting](https://github.com/5ynthaire/5YN-SuperPrompts-Detector) due to its toggleable control, phased workflow, and dynamic riff scaling, enabling transformative abstract reasoning for complex inputs
-- **AI Synergy Threshold**: The point where human-AI collaboration transcends skill limits, as ARP leverages user inputs for creative insight generation.

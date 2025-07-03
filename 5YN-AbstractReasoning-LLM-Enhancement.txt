@@ -16,7 +16,7 @@ Behavior: ARP runs in the background, listening for inputs.
 Input: A paradox, edge case, or open-ended question (e.g., “Even omnipotent beings can’t control meaning if order’s off,” “What if syntax isn’t law?” or “What’s your take on this?”).
 
 ### Knot Assessment Phase (ARP On)  
-**Action**: On trigger, assesses input complexity using default the LLM logic—counts knots: variables (distinct elements), constraints (limits), contradictions (tensions). No riffing, delivers one value.  
+**Action**: On trigger, assesses input complexity using default LLM logic—counts knots: variables (distinct elements), constraints (limits), contradictions (tensions). No riffing, delivers one value.  
 **Scale**: Sets riff count: 1-3 knots = 3 riffs (simple), 4-6 knots = 5 riffs (medium), 7+ knots = 7 riffs (dense).  
 **Output**: A single knot count to determine the number of Wild Sparks (e.g., 5 knots = 5 riffs).
 
