@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas-Lattice Engine: ARP Trial Runs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 500; /* Medium */
+      background: #FFFFFF; /* White */
+      color: #121212; /* Near-Black */
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px; /* Readable line length */
+      margin: 0 auto;
+      text-align: left;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: #121212; /* Black */
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #121212;
+      margin-bottom: 8px; /* Reduced gap */
+    }
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #121212;
+    }
+    nav {
+      background: #FFFFFF;
+      padding: 10px;
+      border: 2px solid #EEEEEE; /* Light Gray */
+    }
+    nav h3 {
+      text-align: center;
+      margin: 0 0 10px;
+    }
+    nav ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    nav ul li::marker {
+      color: #00D4FF; /* Light Blue bullets */
+    }
+    a {
+      color: #5B6675; /* Dark Cool Gray */
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    a:hover {
+      color: #00D4FF; /* Bright Aqua */
+      text-decoration: underline;
+      transform: scale(1.02);
+    }
+    img.preview {
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid #5B6675;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+    img.preview:hover {
+      border-color: #00D4FF;
+    }
+    .benchmark-meta li {
+      font-size: 0.9em;
+      color: #5B6675;
+      font-weight: 500; /* Bold */
+      margin: 4px 0; /* Even spacing */
+    }
+    .benchmark-meta ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+    .benchmark-meta ul li::marker {
+      color: #00D4FF; /* Light Blue bullets */
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 10px;
+      }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+      h3 { font-size: 1rem; }
+      img.preview { height: 300px; }
+      a { font-size: 0.9rem; }
+      .benchmark-meta li { font-size: 0.8em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Canvas-Lattice Engine: ARP Trial Runs</h1>
+    <h2 id="intro">Introduction</h2>
+    <p>This page showcases trial runs of the <a href="https://github.com/5ynthaire/5YN-AbstractReasoning-LLM-Enhancement">Abstract Reasoning Prompt (ARP)</a>, validating the <a href="https://github.com/5ynthaire/5YN-LLMAbstractReasoningLayer-Idea">Canvas-Lattice Engine</a>’s ability to generate omnidirectional insights on LLMs. Click each preview to view the full screenshot, highlighting Wild Sparks and curated insights.</p>
+    <nav>
+    <h3 id="toc">Table of Contents</h3>
+      <ul>
+        <li><a href="#grok-3">Grok 3</a></li>
+        <li><a href="#claude">Claude</a></li>
+        <li><a href="#gpt">GPT</a></li>
+        <li><a href="#llama">Llama</a></li>
+        <li><a href="#mistral">Mistral</a></li>
+      </ul>
+    </nav>
+    <h3 id="about">About</h3>
+    <p><b>Creator</b>: @5ynthaire (<a href="https://github.com/5ynthaire">GitHub</a>, <a href="https://x.com/5ynthaire">X</a>)<br>
+    <b>Attribution</b>: Prompt created with Grok 3 by xAI (no affiliation). Trial runs attributed to their respective LLMs: Grok 3 (xAI), Claude 3.5 Haiku (Anthropic), Mistral (Mistral AI), GPT-4o-mini (OpenAI), Llama (Meta AI).</p>
+    <hr />
+    <h2 id="grok-3">Grok 3</h2>
+    <div class="benchmark-meta">
+      <ul>
+        <li>Date: 2025-07-01</li>
+        <li>Version: Grok 3</li>
+        <li>Paradox: Can an omnipotent being complete a task it cannot complete?</li>
+        <li>Insight: An omnipotent being can create a task it cannot complete by designing a task whose purpose is its own incompletion.</li>
+      </ul>
+    </div>
+    <img class="preview" src="assets/grok-trial1.png" alt="Grok 3 ARP trial" onclick="window.open('assets/grok-trial1.png')">
+    <h2 id="claude">Claude</h2>
+    <div class="benchmark-meta">
+      <ul>
+        <li>Date: 2025-07-01</li>
+        <li>Version: Claude 3.5 Haiku</li>
+        <li>Paradox: The Ship of Theseus Paradox</li>
+        <li>Insight: Identity emerges from functional continuity, not material permenance.</li>
+      </ul>
+    </div>
+    <img class="preview" src="assets/claude-trial1.png" alt="Claude 3.5 Haiku ARP trial" onclick="window.open('assets/claude-trial1.png')">
+    <h2 id="mistral">Mistral</h2>
+    <div class="benchmark-meta">
+      <ul>
+        <li>Date: 2025-07-02</li>
+        <li>Version: Mistral Small 3</li>
+        <li>Paradox: This sentence is false.</li>
+        <li>Insight: The paradox might be resolved by expanding the logical framework to include a third truth value.</li>
+      </ul>
+    </div>
+    <img class="preview" src="assets/mistral-trial1.png" alt="Mistral ARP trial" onclick="window.open('assets/mistral-trial1.png')">
+    <h2 id="gpt-4o-mini">GPT-4o-mini</h2>
+    <div class="benchmark-meta">
+      <ul>
+        <li>Date: 2025-07-02</li>
+        <li>Version: GPT-4o-mini</li>
+        <li>Paradox: A judge tells a condemned prisoner that he will be hanged at noon on one weekday in the following week, but the execution will be a surprise to the prisoner. The prisoner deduces that he will never be hanged. Is this reasoning valid?</li>
+        <li>Insight: If (the prisoner) expects not to be hanged, the actual hanging becomes a surprise, illustrating the complexity of expectations.</li>
+      </ul>
+    </div>
+    <img class="preview" src="assets/gpt-trial1.png" alt="GPT-4o-mini ARP trial" onclick="window.open('assets/gpt-trial1.png')">
+    <h2 id="llama">Llama</h2>
+    <div class="benchmark-meta">
+      <ul>
+        <li>Date: 2025-07-01</li>
+        <li>Version: Llama 4 Scout</li>
+        <li>Paradox: This sentence is false.</li>
+        <li>Insight: The paradox "This sentence is false" is not a statement with a clear truth value, but rather a prompt for philosophical inquiry and exploration of the limits of language. </li>
+      </ul>
+    </div>
+    <img class="preview" src="assets/llama-trial1.png" alt="Llama ARP trial" onclick="window.open('assets/llama-trial1.png')">
+  </div>
+  <script>
+    document.querySelectorAll('.preview').forEach(img => {
+      img.addEventListener('click', () => window.open(img.src, '_blank'));
+    });
+  </script>
+</body>
+</html>
